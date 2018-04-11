@@ -1,0 +1,478 @@
+/* CSS Document for Screens http://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+/*
+palette
+#403936
+#CF8C85
+#4A494A
+#643C5A(nav)
+#94302c(nav)
+#6E7A7D
+*/
+
+#page {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 18%;
+    background-color: #FFFFFF;
+    /*border: solid white 1px;*/
+}
+.main{
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+.welcome{
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+}
+body {
+    background: #403936
+    url(../images/tumblr_mhwizj6POM1r2sq16o1_1280.jpg);
+    background-size:48.2%;
+    background-position: 320px;
+  }
+h2 { 
+    margin: 2%; 
+    padding: .2em;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+   }
+h3 { 
+    margin: 0 0 .5em 0; 
+    font-size: 1.3em;
+    font-weight: 700;
+   }
+p  {
+    
+   }
+a  {
+    color: #007eff;
+    margin: 2%;
+    padding: 1%;
+   }
+a:visited  {
+    color:brown;
+   }
+
+/*Header*/
+
+header {
+    height: 430px;
+    background: #403936
+    url(
+../images/snowthingycropped.jpg) no-repeat;
+    background-size:100%;
+    position: relative;
+   }
+header a.logo:hover{
+    color: #CF8C85;
+    transition: 0.6s;
+}
+header a.logo {
+    position:absolute;
+    text-decoration: none;
+    font-size: 5.3em;
+    /*width:512px; 
+    height: 89px;*/
+    /*background: url(../images/yeboi.png) no-repeat 0 0;*/
+    margin: 0 auto;
+    padding:11px;
+    right: 23%;
+    bottom: 105%;
+    color: rgba(123,140,133,.5);
+    background-color: rgba(248,233,248,.3);
+   }
+header a.logo span {
+    /*display: none;*/
+}
+
+/*Section - All*/
+
+section {
+    padding: 0 40px;
+    border: solid burlywood 1px;
+    border-style: dotted;
+}
+section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*Section - Main*/
+
+section.main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+section.main .content {
+    margin: 15px;
+    background: no repeat center top;
+    background size: 75px 75px;
+    padding-top: 85;
+}
+section.main aside h3 a {
+    color: #4A494A; 
+    text-decoration: none;
+}
+section.main aside h3 a:hover {
+    text-decoration: underline;
+    color: #B585A5
+}
+
+/*Nav*/
+
+nav{
+    background-color: rgba(100,60,90,.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 0px 0 0 0;
+    width: 100%;
+}
+nav:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+nav ul li:hover {
+    background-color: #94302c;
+}
+nav ul li:hover > ul {
+   display: block;
+}
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    width: 125px;
+    margin: .5px;
+    position: relative;
+    transition: 0.3s;
+}
+nav ul li a:visited {
+    color: #fff
+}
+nav ul li a:hover{
+    background-color: #891A3B;
+}
+ul.disnav li.icon{
+    display: none;
+}
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: #94302c;
+    padding: .5em;
+    margin: 0 auto;
+    display: none;
+}
+/*top-level*/
+nav > ul {
+    padding-left: 200px;
+}
+nav > ul > li {
+    float: left;
+}
+nav > ul > li > a { 
+    width: auto; padding: 10px 20px 15px 20px;
+}
+
+nav a[aria-haspopup="true"]::after{
+    content:'';
+    display: block;
+    width:  0px;
+    height: 0px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid white;
+}
+
+nav > ul > li >a[aria-haspopup="true"]::after{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+    left: 20px;
+    right: auto;
+    bottom: 6px;
+    top: auto;
+}
+
+/*Footer*/
+
+footer {
+    font-size: .8em;
+    padding: .1em;
+    color: #FFFFFF;
+    background-color: #6E7A7D;
+}
+footer .content {
+    display: inline;
+}
+footer a {
+    margin-left: 30px;
+    color: #FFFFFF;
+}
+footer a:visited{
+    color: darkred;
+}
+footer a:hover {
+    color: #000000;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1164px) {
+    #page{
+    max-width: 700px;
+    margin-top: 21%;
+    }
+    body{
+    background-size: 55%;
+    }
+    header a.logo {
+    right: 17%;
+    font-size: 4.7em;
+    }
+    header{
+    height: 300px;
+    background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #page{
+    max-width: 600px;
+    margin-top: 32%;
+    }
+    body{
+    background-size: 70%;
+    }
+    header{
+    height: 258px;
+    background-size: 100%;
+    }
+    header a.logo {
+    right: 15%;
+    font-size: 4.2em;
+    }
+    }
+    h2 { 
+    margin: 1%; 
+    padding: .1em;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1em;
+   }
+    h3 { 
+    margin: 0 0 .3em 0; 
+    font-size: 1.1em;
+    font-weight: 700;
+   }
+    a  {
+    color: #007eff;
+    margin: 1%;
+    padding:.5%;
+    font-size: .9em; 
+   }
+    p  {
+    margin: 3%;
+    font-size: .8em;
+    line-height: 1.3em;
+    }
+
+/*mobile(make smaller nav starting here)*/
+
+@media screen and (max-width: 645px) {
+    #page{
+    max-width: 500px;
+    margin-top: 32%;
+    }
+    body{
+    background-size: 100%;
+    }
+    header a.logo {
+    right:15%;
+    font-size: 3.5em;
+   }
+    header{
+    height: 250px;
+    background-size: 100%;
+    background-image: url(../images/snowthingy.jpg)
+    }
+     h2 { 
+    margin: 0%; 
+    padding: 0em;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1em;
+   }
+    a  {
+    color: #007eff;
+    margin: 1%;
+    padding:.2%;
+    font-size: .9em; 
+   }
+    section.main aside {
+    width: 100%;
+    float: none;
+    text-align: left;
+    }
+    footer div.content {
+    display: block;
+    margin-top:8px;
+    }
+}
+
+/*w3schools*/
+@media screen and (max-width: 645px) {
+ ul.disnav li {
+     display: none;
+  }
+  ul.disnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+ /*ul.disnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }*/
+  ul.disnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.disnav.responsive li a {
+    display: block;
+    text-align: left;
+    }
+    nav ul, nav ul ul, nav ul ul ul{
+        display: block;
+        position: static;
+    }
+    nav > ul {
+        padding: 0;
+    }
+    nav > ul > li {
+        float: none;
+    }
+    nav ul ul {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+    #page{
+    max-width: 410px;
+    margin-top: 36%;
+    }
+    body{
+    background-size: 100%;
+    }
+    header a.logo {
+    right: 12%;
+    font-size: 3.1em;
+   }
+    header{
+    height: 210px;
+    background-size: 100%;
+    }
+}
+@media screen and (max-width: 448px) {
+    #page{
+    max-width: 340px;
+    margin-top: 40%;
+    }
+    body{
+    background-size: 100%;
+    }
+    header a.logo {
+    right: 11%;
+    font-size: 2.6em;
+    }
+    header{
+    height: 180px;
+    background-size: 100%;
+    }
+    footer:after {
+        content:'';
+        display:block;
+        clear: both;
+    }
+    footer div.content a {
+        display: inline-block;
+        margin: 0 0 10px 0;
+        float: left;
+        clear:both;
+    }
+}
+@media screen and (max-width: 372px) {
+    #page{
+    max-width: 300px;
+    margin-top: 47%;
+    }
+    body{
+    background-size: 100%;
+    }
+    header a.logo {
+    right: 11%;
+    font-size: 2.2em;
+    }
+    header{
+    height: 160px;
+    background-size: 100%;
+    }
+     h2 { 
+    font-size: 1em;
+    line-height: 1em;
+   }
+    a  {
+    font-size: .8em; 
+   }
+     p  {
+    margin: 3%;
+    font-size: .7em;
+    }
+}
+@media screen and (max-width: 332px) {
+    #page{
+    max-width: 265px;
+    margin-top: 47%;
+    }
+    body{
+    background-size: 100%;
+    }
+     header a.logo {
+    right: 12%;
+    font-size: 1.9em;
+    }
+    header{
+    height: 140px;
+    background-size: 100%;
+    }
+      h2 { 
+    font-size: .9em;
+    line-height: .9em;
+   }
+    a  {
+    font-size: .7em; 
+   }
+     p  {
+    font-size: .5em;
+    }
+}
